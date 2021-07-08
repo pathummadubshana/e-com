@@ -19,5 +19,12 @@ use App\Http\controllers\productcontroller;
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('login');
+});
 Route::Post("/login",[usercontroller::class,'login']);
 Route::get("/",[productcontroller::class,'index']);
+Route::get("detail/{id}",[productcontroller::class,'detail']);
+Route::get("search",[productcontroller::class,'search']);
+Route::Post("/add_to_cart",[productcontroller::class,'addtocart']);

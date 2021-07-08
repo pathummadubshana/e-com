@@ -25,5 +25,31 @@
     height: 500px;
     padding-top: 100px;
 }
+img.slider-img{
+    height: 400px !important ; 
+}
+.custem-product{
+    height: 600px;
+
+}
+.slider-text{
+    background-color:#00800029 !important;
+}
+.trending-imge{
+    height: 100px;
+}
+.trending-item{
+    float: left;
+    width: 16%;
+}
+.trending-wrapper{
+    margin: 30px;
+}
+.detail-img{
+    height: 200px;
+}
+.search-box{
+    width: 500px !important;
+}
 </style>
 </html>
